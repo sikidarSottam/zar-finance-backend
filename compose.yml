@@ -1,4 +1,4 @@
-# Define the services (containers) for your application.
+﻿# Define the services (containers) for your application.
 services:
   # The name of your service. You can change this to something more descriptive.
   app:
@@ -15,3 +15,4 @@ services:
     # This is a good practice for managing multiple variables.
     env_file:
       - .env
+

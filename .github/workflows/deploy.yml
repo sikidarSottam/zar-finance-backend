@@ -1,4 +1,4 @@
-name: Deploy To EC2
+﻿name: Deploy To EC2
 
 on:
   push:
@@ -19,6 +19,7 @@ jobs:
           username: ec2-user
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /home/ec2-user/projects/phegon-bank
+            cd /home/ec2-user/projects/zar-finance
             git pull origin main
             docker-compose up --build -d
+
